@@ -13,7 +13,7 @@ body {
 
 .nav {
   height: 50px;
-  width:90%;
+  width:80%;
   margin:auto;
   background-color: #4d4d4d;
   position: relative;
@@ -24,7 +24,7 @@ body {
 }
 
 .nav > .nav-header > .nav-title {
-  display: inline-block; /*allows to set a width and height on the element*/
+  display: inline-block;
   font-size: 22px;
   color: #fff;
   height: 50px;
@@ -117,11 +117,12 @@ body {
 
 #slider {
   max-height: calc(90vh - 100px);
+  display: initial;
 }
 
 /* Slideshow container */
 .slideshow-container {
-  width: 90%;
+  width: 80%;
   margin: 10px auto;
   max-width: 100%;
   position: relative;
@@ -187,4 +188,94 @@ body {
 
 .active-dot, .dot:hover {
   background-color: #717171;
+}
+
+
+/*  ------------- Cards ------------- */
+/* Float the columns side by side */
+.column {
+  float: left;
+  width: 33.3%;
+  padding: 0 10px;
+}
+
+.row {
+  margin: 50px auto;
+  width: 80%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  clear: both;
+  display: table; /* without this, the row won't have a height and would miss divs after it */
+}
+
+.container {
+  height: 600px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px #ebebeb;
+}
+.upper {
+  height: 70%;
+  box-sizing: border-box;
+  border-radius: 9px 9px 0 0;
+  text-align: center;
+}
+.upper img {
+  height: 100%;
+  width: 100%;
+}
+.lower {
+  height: 30%;
+  border-radius: 0 0 9px 9px;
+  box-sizing: border-box;
+  background-color: #F7FCFA;
+  border-left: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
+  border-right: 2px solid #ccc;
+}
+.title {
+  margin: 0;
+  padding-top: 20px;
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+  color: #8A99A0;
+}
+.card-content {
+  padding: 0 20px;
+  font-size: 18px;
+  line-height: 1.4;
+}
+.container a {
+  text-decoration: none;
+  color: #8A99A0;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 1000px) {
+  .column {
+    width: 50%;
+    display: block;
+    margin-bottom: 20px;
+  }
+  .row {
+    margin: 40px auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .slideshow-container, .row {
+    width: 90%;
+  }
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+  .row {
+    margin: 30px auto;
+  }
 }
