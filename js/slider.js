@@ -1,5 +1,7 @@
 let slideIndex = 1;
-showSlides(slideIndex);
+if(document.URL.includes("index.html")){
+  showSlides(slideIndex);
+}
 
 function plusSlides(n) {
   showSlides(slideIndex += n);
@@ -23,4 +25,10 @@ function showSlides(n) {
 
   slides[slideIndex-1].className += " active-slide";
   dots[slideIndex-1].className += " active-dot";
+}
+
+if (document.getElementsByTagName('form')[0]) {
+  document.getElementsByTagName('form')[0].addEventListener("click", function(event){
+    event.preventDefault()
+  });
 }
