@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>product-page</title>
+    <title>Nike - contact us</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
 </head>
@@ -38,19 +38,27 @@
 
     <div id="main-content">
         <div class="row">
-            <div id="product">
-                <div id="product-img">
-                    <img src="img/card2.webp">
-                </div>
-                <div id="product-details">
-                    <h3>No Finish Line</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incidiquis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
-                </div>
-            </div>
+            <form action="index.html" method="post">
+              <h1>contact us</h1>
+              
+              <fieldset>
+                
+                <legend>Happy to hear from you.</legend>
+              
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="user_name">
+              
+                <label for="email">Email:</label>
+                <input type="email" id="mail" name="user_email">
+
+                <label for="bio">Message:</label>
+                 <textarea id="Message" name="Message" rows="5"></textarea>
+                
+              </fieldset>
+             
+              <button type="submit">Send</button>
+              
+             </form>
         </div>
     </div>
 
