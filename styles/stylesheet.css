@@ -492,6 +492,10 @@ form input[type="checkbox"] {
   margin: 0 4px 8px 0;
 }
 
+.radio-div {
+  margin-bottom: 30px;
+}
+
 form select {
   padding: 6px;
   height: 32px;
